@@ -1,0 +1,38 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 5px 26px rgba(255, 0, 0, 0.686);
+  .logo {
+    color: white;
+    font-weight: bold;
+    background-image: url('../../Assets/logo.jpg');
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  } // Closes Logo
+  .links {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .active {
+      color: red;
+    } // Closes active
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.2s ease-in;
+
+      &:hover {
+        color: red;
+      } // Closes :hover
+    } // Closes a
+  } // Closes div.links
+} // Closes nav

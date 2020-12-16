@@ -1,0 +1,34 @@
+.banner {
+  background-image: url('../../Assets/Flag.jpg');
+  height: 50vh;
+  width: 100%;
+  z-index: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .banneroverlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.474);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } // Closes banneroverlay
+  .bannercontent {
+    z-index: 2;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+
+    button {
+      .button();
+    } // Closes button
+  } // Closes bannercontent
+} // Closes Benner
